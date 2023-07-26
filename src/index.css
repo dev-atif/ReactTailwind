@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-color-primary text-color-white tracking-wider
+    font-inter
+}
+.btn {
+    @apply bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200;
+}
+.blob1 {
+    @apply w-80 h-80 bg-color-blob absolute top-20 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+.blob2 {
+    @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+h1{
+    @apply text-2xl tracking-wider leading-snug md:text-3xl
+}
+.title{
+    @apply text-color-secondary mb-10 border border-solid inline-block px-5 py-3 text-center font-bold
+}
+.active-image{
+    @apply  border-2 border-color-secondary
+}
+.flip-card {
+    perspective: 1000px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #f2f2f2;
+  }
+  
+  .card-back {
+    background-color: #eaeaea;
+    transform: rotateY(180deg);
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  
